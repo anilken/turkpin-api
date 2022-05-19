@@ -88,17 +88,17 @@ class Base
         curl_close($curl);
 
         if (! $response || strlen(trim($response)) == 0) {
-            throw new Exception('Api empty result');
+            throw new Exception('Api empty result', 0);
         }
 
         $result = $this->xml2array($response)['params'];
 
         if (isset($result['HATA_NO']) && $result['HATA_NO'] !== '000') {
-            throw new Exception($result['HATA_ACIKLAMA']);
+            throw new Exception($result['HATA_ACIKLAMA'], $result['HATA_NO']);
         }
 
         if (isset($result['error']) && $result['error'] !== '000') {
-            throw new Exception($result['error_desc']);
+            throw new Exception($result['error_desc'], $result['error']);
         }
 
         return $result;

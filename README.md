@@ -96,6 +96,41 @@ $api->checkBalance();
 
 ```
 
+## Exception Codes
+
+| Code | Message                                                                                             |
+|------|-----------------------------------------------------------------------------------------------------|
+| 0	   | Empty api result try again                                                                          |
+| 1	   | User not found, check your username and password.                                                   |
+ | 2	   | There is no access from your IP address. Please check your IP Address.                              |
+ | 3	   | Invalid command, check cmd parameter.                                                               |
+ | 4	   | Message field is a mandatory field.                                                                 |
+ | 5	   | An error occurred while processing.                                                                 |
+ | 6	   | This Account is not authorized to use Turkpin API                                                   |
+ | 7	   | This Account is not available for Turkpin API.                                                      |
+ | 8	   | Game ID is missing                                                                                  |
+ | 9	   | The server list for the game could not be found                                                     |
+ | 10	  | Missing or incorrect order format.                                                                  |
+ | 11	  | The product was not found.                                                                          |
+ | 12	  | The product is out of stock.                                                                        |
+ | 13	  | The number of orders must be min% s.                                                                |
+ | 14	  | Dealer Balance Insufficient.                                                                        |
+ | 15	  | Payment type is invalid                                                                             |
+ | 16	  | Missing or incorrect notification format. Please check fields                                       |
+ | 17	  | You have entered a missing or incorrect notification number. Please check the notification_id value |
+ | 18	  | Number of orders must be max% s.                                                                    |
+ | 19	  | System error, error code:% s                                                                        |
+ | 20	  | Please enter correct operator and phone number for GSM TL top up                                    |
+ | 21	  | The amount to be reported for payment must be greater than 0                                        |
+ | 22	  | This product is not purchased by us.                                                                |
+ | 23	  | The site is currently closed for an update or maintenance.                                          | 
+ | 99   | Order Not Found. Check Order Number                                                                 |
+ | 111  | XML Format Error. Please check the XML format you sent.                                             |
+| ---  | Custom error codes added to this package                                                            |
+| 101  | Failed to get game list                                                                             |
+| 102  | Failed to get products list                                                                         |
+| 103  | Failed to get balance                                                                               |
+
 ## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.

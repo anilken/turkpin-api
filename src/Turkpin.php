@@ -38,7 +38,7 @@ class Turkpin
         $result = $this->api->make('epinOyunListesi');
 
         if (! isset($result['oyunListesi']['oyun'])) {
-            throw new Exception('Failed to get game list');
+            throw new Exception('Failed to get game list', 101);
         }
 
         return $result['oyunListesi']['oyun'];
@@ -56,7 +56,7 @@ class Turkpin
         $result = $this->api->make('epinUrunleri', ['oyunKodu' => $epin_id]);
 
         if (! isset($result['epinUrunListesi']['urun'])) {
-            throw new Exception('Failed to get game list');
+            throw new Exception('Failed to get products list', 102);
         }
 
         return $result['epinUrunListesi']['urun'];
@@ -132,7 +132,7 @@ class Turkpin
         $result = $this->api->make('balance');
 
         if (! isset($result['balanceInformation'])) {
-            throw new Exception('Failed to get balance');
+            throw new Exception('Failed to get balance', 103);
         }
 
         return $result['balanceInformation'];
