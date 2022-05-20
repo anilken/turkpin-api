@@ -96,6 +96,30 @@ class Turkpin
     }
 
     /**
+     * Check in stock product
+     *
+     * @param int $epin_id epinList() id
+     * @param int $product_id epinProducts() id
+     * @return int
+     * @throws Exception
+     */
+    public function epinCheckStock($epin_id, $product_id): int
+    {
+        $products = $this->epinProducts($epin_id);
+
+        $stock = 0;
+        foreach ($products as $product) {
+            if ($product['id'] === $product_id) {
+                $stock = $product['stock'];
+
+                break;
+            }
+        }
+
+        return $stock;
+    }
+
+    /**
      * Check order Status
      *
      * @param int|string $order_no epinOrder() order_no
