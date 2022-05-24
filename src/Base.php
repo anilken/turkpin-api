@@ -7,7 +7,7 @@ use SimpleXMLElement;
 
 class Base
 {
-    protected $api_url = "http://turkpin.com/api.php";
+    protected $api_url = "http://www.turkpin.com/api.php";
 
     /**
      * @var string Turkpin Api Username
