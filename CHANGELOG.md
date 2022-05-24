@@ -2,6 +2,14 @@
 
 All notable changes to `turkpin-api` will be documented in this file.
 
+## v1.0.4 - 2022-05-24
+
+## What's Changed
+
+- Api www Required by @anilken in https://github.com/anilken/turkpin-api/pull/3
+
+**Full Changelog**: https://github.com/anilken/turkpin-api/compare/v1.0.3...v1.0.4
+
 ## v1.0.3 - 2022-05-20
 
 ## What's Changed
