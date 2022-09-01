@@ -2,6 +2,18 @@
 
 All notable changes to `turkpin-api` will be documented in this file.
 
+## v1.0.5 - 2022-09-01
+
+### What's Changed
+
+- Bump dependabot/fetch-metadata from 1.3.1 to 1.3.3 by @dependabot in https://github.com/anilken/turkpin-api/pull/4
+
+### New Contributors
+
+- @dependabot made their first contribution in https://github.com/anilken/turkpin-api/pull/4
+
+**Full Changelog**: https://github.com/anilken/turkpin-api/compare/v1.0.4...v1.0.5
+
 ## v1.0.4 - 2022-05-24
 
 ## What's Changed
